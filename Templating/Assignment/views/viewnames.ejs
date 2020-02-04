@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+
+    <link href="/css/viewNames.css" rel="stylesheet" type="text/css" />
+
+    <title>View Name</title>
+  </head>
+  <body>
+    <%- include('./includes/navigation.ejs') %>
+
+    <div><h4>Previously submitted Names</h4></div>
+    <% for(let name of names) {%>
+    <div><%=name%></div>
+    <% } %>
+  </body>
+</html>
